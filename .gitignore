@@ -1,0 +1,65 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python tooling and test caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.code-workspace
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local data
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+
+# Keep data directory structure in Git
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# Models and ML artifacts
+models/*
+artifacts/*
+mlruns/
+mlartifacts/
+
+# Keep selected directory structure in Git
+!models/.gitkeep
+!artifacts/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
