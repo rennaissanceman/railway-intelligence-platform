@@ -7,7 +7,13 @@ authors = [
     { name = "Roberto", email = "legendarnyziomm@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "numpy>=2.4.6",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.0",
+    "pydantic-settings>=2.14.2",
+    "scikit-learn>=1.9.0",
+]
 
 [project.scripts]
 railway-intelligence-platform = "railway_intelligence_platform:main"
@@ -15,3 +21,9 @@ railway-intelligence-platform = "railway_intelligence_platform:main"
 [build-system]
 requires = ["uv_build>=0.9.16,<0.10.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.1",
+]
